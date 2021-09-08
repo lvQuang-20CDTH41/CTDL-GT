@@ -44,8 +44,7 @@ public class mainApp {
 	public static boolean ascendingArr(int[] arr) {
 		boolean kt = true;
 		for (int i = 0; i < arr.length - 1; i++) {
-			int j = i + 1;
-			if(arr[i] <= arr[j]) {
+			if(arr[i] <= arr[i + 1]) {
 				kt = true;
 			}else {
 				kt = false;
@@ -65,17 +64,17 @@ public class mainApp {
 		int[] arr = new int[n];
 		inputArr(n, arr);
 		// Hiển thị
-//		System.out.println("Hiển thị danh sách mảng: ");
-//		printArr(arr);
-//		// phần tử chẵn
-//		System.out.println("Số phần tử chẵn trong mảng: " + evenArr(arr));
-//		// chẵn và chia hết cho 3
-//		System.out.println("Các phần tử chẵn và không chia hết cho 3 trong mảng: ");
-//		evenDivisible(arr);
-//		// tìm kiếm
-//		System.out.println("Nhập số bạn muốn tìm kiếm: ");
-//		int x = sc.nextInt();
-//		System.out.printf("%d có trong mảng hay không: " + findArr(arr, x) + "\n", x);
+		System.out.println("Hiển thị danh sách mảng: ");
+		printArr(arr);
+		// phần tử chẵn
+		System.out.println("Số phần tử chẵn trong mảng: " + evenArr(arr));
+		// chẵn và chia hết cho 3
+		System.out.println("Các phần tử chẵn và không chia hết cho 3 trong mảng: ");
+		evenDivisible(arr);
+		// tìm kiếm
+		System.out.println("Nhập số bạn muốn tìm kiếm: ");
+		int x = sc.nextInt();
+		System.out.printf("%d có trong mảng hay không: " + findArr(arr, x) + "\n", x);
 		// sắp xếp tăng dần ko
 		System.out.printf("Mảng có sắp xếp tăng dần hay không :" + ascendingArr(arr));
 	}
